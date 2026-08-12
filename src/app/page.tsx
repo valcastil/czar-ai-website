@@ -38,7 +38,7 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                Unique    {' '}
+                Unique{' '}
                 <span className="gradient-text">Social Platform</span>
                 <br />
                 with AI
