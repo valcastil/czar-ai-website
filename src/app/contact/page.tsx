@@ -19,16 +19,21 @@ export default function ContactPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
-              { icon: '📧', label: 'General', email: 'hello@czarai.app' },
-              { icon: '🛡️', label: 'Privacy', email: 'privacy@czarai.app' },
-              { icon: '⚖️', label: 'Legal', email: 'legal@czarai.app' },
-              { icon: '💡', label: 'Support', email: 'support@czarai.app' },
+              { icon: '💻', label: 'Developer', value: 'developer@openanaios.com', href: 'mailto:developer@openanaios.com' },
+              { icon: '💡', label: 'Support', value: 'support@openanaios.com', href: 'mailto:support@openanaios.com' },
+              { icon: '🌐', label: 'Website', value: 'www.openanaios.com', href: 'https://www.openanaios.com', external: true },
+              { icon: '📞', label: 'Phone', value: '+63 966 073 8395', href: 'tel:+639660738395' },
             ].map((c) => (
               <div key={c.label} className="glass-card p-6">
                 <span className="text-2xl block mb-2">{c.icon}</span>
                 <p className="text-white font-semibold text-sm mb-1">{c.label}</p>
-                <a href={`mailto:${c.email}`} className="text-gold-500 text-sm hover:text-gold-400 transition-colors">
-                  {c.email}
+                <a
+                  href={c.href}
+                  target={c.external ? '_blank' : undefined}
+                  rel={c.external ? 'noopener noreferrer' : undefined}
+                  className="text-gold-500 text-sm hover:text-gold-400 transition-colors"
+                >
+                  {c.value}
                 </a>
               </div>
             ))}
