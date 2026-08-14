@@ -9,7 +9,7 @@ interface Post {
   title: string;
   date: string;
   slug: string;
-  excerpt: string;
+  excerpt?: string;
   url?: string;
 }
 
@@ -25,12 +25,14 @@ const POSTS: Post[] = [
     title: 'How AI is Transforming Personal Development',
     date: 'Jul 28, 2026',
     slug: 'ai-transforming-personal-development',
+    excerpt: 'The role of artificial intelligence in modern self-improvement.',
     url: 'https://www.youtube.com/watch?v=k7PvscqGD24',
   },
   {
     title: 'Understanding the 12 Types of Charisma',
     date: 'Jul 15, 2026',
     slug: 'understanding-12-types-charisma',
+    excerpt: 'Discover your dominant charisma type and how to leverage it.',
     url: 'https://www.youtube.com/watch?v=Qtzv-mV7rkI',
   },
 ];
@@ -71,7 +73,7 @@ export default function BlogPage() {
                   <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">
                     {post.title}
                   </h2>
-                  <p className="text-gray-400 text-sm">{post.excerpt}</p>
+                  {post.excerpt && <p className="text-gray-400 text-sm">{post.excerpt}</p>}
                   <span className="inline-block mt-3 text-gold-500 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     {isExternal ? 'Watch on YouTube ↗' : 'Read more →'}
                   </span>
