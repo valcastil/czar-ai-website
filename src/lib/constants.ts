@@ -43,7 +43,7 @@ export const FEATURES = [
   {
     icon: '🛍️',
     title: 'Marketplace',
-    description: 'Buy, sell, and raffle items across categories like Home, Vehicles, Electronics, and Bicycles.',
+    description: 'Buy and sell through raffle items across categories like Home, Vehicles, Electronics, and Bicycles.',
     href: '/features/marketplace',
     color: 'from-green-500 to-emerald-500',
   },
@@ -53,6 +53,13 @@ export const FEATURES = [
     description: 'Real-time 1:1 chat with AES-256 end-to-end encryption. Share attachments, locations, reactions, and more.',
     href: '/features/messaging',
     color: 'from-indigo-500 to-violet-500',
+  },
+  {
+    icon: '🪙',
+    title: 'Earn Czar AI Coins',
+    description: 'Earn Czar Coins by completing daily streaks, journaling, and engaging with AI coaching. Unlock VIP perks and exclusive rewards.',
+    href: '/features/coins',
+    color: 'from-amber-500 to-yellow-500',
   },
 ];
 

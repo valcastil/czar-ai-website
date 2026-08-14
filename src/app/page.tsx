@@ -46,7 +46,7 @@ export default function HomePage() {
 
               <p className="text-lg text-gray-400 max-w-lg mb-8 leading-relaxed">
                 Your personal AI-powered charisma coach. Journal your experiences, get real-time coaching,
-                share Czareels, and connect securely — all in one beautiful app.
+                share Czareels, and connect securely — while earning Czar AI coins all in one beautiful app.
               </p>
 
               <div className="flex flex-wrap gap-4">

@@ -21,30 +21,7 @@ export default function MarketplacePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
             <div className="order-2 lg:order-1 flex justify-center">
-              <PhoneMockup className="w-64">
-                <div className="w-full h-full bg-gradient-to-br from-green-900/30 to-dark-100 flex flex-col p-3 pt-12">
-                  <p className="text-white font-bold text-xs mb-2">🛍️ Marketplace</p>
-                  <div className="flex gap-1 mb-3">
-                    {['🏠', '🚗', '🔌', '🚲'].map((e, i) => (
-                      <span key={i} className="px-2 py-0.5 bg-white/10 rounded-full text-[10px]">{e}</span>
-                    ))}
-                  </div>
-                  <div className="bg-white/5 rounded-lg p-2 mb-2 flex gap-2">
-                    <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center text-lg">🏠</div>
-                    <div className="flex-1">
-                      <p className="text-white text-[10px] font-semibold">Cozy Apartment</p>
-                      <p className="text-gold-500 text-[10px] font-bold">$1,200/mo</p>
-                    </div>
-                  </div>
-                  <div className="bg-white/5 rounded-lg p-2 flex gap-2">
-                    <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center text-lg">🚗</div>
-                    <div className="flex-1">
-                      <p className="text-white text-[10px] font-semibold">Tesla Model 3</p>
-                      <p className="text-gold-500 text-[10px] font-bold">🎟️ Raffle</p>
-                    </div>
-                  </div>
-                </div>
-              </PhoneMockup>
+              <PhoneMockup className="w-64" imageSrc="/marketplace_01.jpg" imageAlt="Marketplace app preview" />
             </div>
             <div className="order-1 lg:order-2">
               <span className="inline-block px-3 py-1 text-xs font-medium text-green-400 bg-green-500/10 rounded-full mb-4">

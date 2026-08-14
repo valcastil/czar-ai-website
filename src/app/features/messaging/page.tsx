@@ -8,12 +8,12 @@ export const metadata: Metadata = { title: 'Secure Messaging' };
 
 const SECURITY_FEATURES = [
   { icon: '🔐', title: 'AES-256 Encryption', desc: 'All messages are protected with military-grade end-to-end encryption.' },
-  { icon: '⚡', title: 'Real-Time Delivery', desc: 'Powered by Supabase real-time subscriptions for instant message delivery.' },
-  { icon: '📎', title: 'Rich Attachments', desc: 'Share images, videos, audio, documents, locations, and contacts.' },
+  { icon: '📍', title: 'Share Your Location', desc: 'Share real-time location GPS coordinates and interactive map pins securely in your encrypted chat.' },
+  { icon: '📎', title: 'Rich Attachments', desc: 'Share images, videos, voice notes, documents, and contacts.' },
   { icon: '🔄', title: 'Message Forwarding', desc: 'Forward messages with full chain tracking and attribution.' },
   { icon: '✅', title: 'Read Receipts', desc: 'Know when your messages have been delivered and read.' },
   { icon: '😊', title: 'Emoji Reactions', desc: 'React to any message with emoji. Quick, fun, expressive.' },
-  { icon: '🟢', title: 'Online Status', desc: 'See who&apos;s online and their last seen timestamp.' },
+  { icon: '🟢', title: 'Online Status', desc: 'See who is online and their last seen timestamp.' },
   { icon: '🛡️', title: 'Rate Limited', desc: '30 messages per minute to prevent spam and abuse.' },
 ];
 
@@ -46,26 +46,7 @@ export default function MessagingPage() {
               </Link>
             </div>
             <div className="flex justify-center">
-              <PhoneMockup className="w-64">
-                <div className="w-full h-full bg-gradient-to-br from-indigo-900/30 to-dark-100 flex flex-col p-3 pt-12">
-                  <p className="text-white font-bold text-xs mb-3 border-b border-white/10 pb-2">💬 Chat</p>
-                  <div className="flex-1 flex flex-col gap-2">
-                    <div className="self-end bg-indigo-500/20 rounded-2xl rounded-br-sm px-3 py-1.5 max-w-[75%]">
-                      <p className="text-white text-[10px]">Hey! How was the event?</p>
-                    </div>
-                    <div className="self-start bg-white/10 rounded-2xl rounded-bl-sm px-3 py-1.5 max-w-[75%]">
-                      <p className="text-white text-[10px]">Amazing! Used the tips you shared 🙌</p>
-                    </div>
-                    <div className="self-end bg-indigo-500/20 rounded-2xl rounded-br-sm px-3 py-1.5 max-w-[75%]">
-                      <p className="text-white text-[10px]">That&apos;s great! 🔥</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between text-[10px] text-gray-500 mt-2">
-                    <span>🔒 End-to-end encrypted</span>
-                    <span>✅ Read</span>
-                  </div>
-                </div>
-              </PhoneMockup>
+              <PhoneMockup className="w-64" imageSrc="/chat_01.jpg" imageAlt="Secure Messaging app preview" />
             </div>
           </div>
 

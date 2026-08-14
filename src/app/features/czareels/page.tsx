@@ -23,21 +23,7 @@ export default function CzareelsPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
             <div className="order-2 lg:order-1 flex justify-center">
-              <PhoneMockup className="w-64">
-                <div className="w-full h-full bg-gradient-to-br from-orange-900/30 to-dark-100 flex flex-col items-center justify-center pt-12">
-                  <span className="text-5xl mb-4">🎬</span>
-                  <span className="text-gold-500 font-bold text-sm">Czareel</span>
-                  <div className="flex gap-2 mt-3">
-                    <span className="px-2 py-0.5 bg-orange-500/20 text-orange-400 rounded-full text-[10px]">💪 Confidence</span>
-                    <span className="px-2 py-0.5 bg-orange-500/20 text-orange-400 rounded-full text-[10px]">✨ Energy</span>
-                  </div>
-                  <div className="flex gap-4 mt-6 text-gray-500 text-[10px]">
-                    <span>❤️ 1.2K</span>
-                    <span>💬 89</span>
-                    <span>👁️ 5.4K</span>
-                  </div>
-                </div>
-              </PhoneMockup>
+              <PhoneMockup className="w-64" imageSrc="/czareels_01.jpg" imageAlt="Czareels app preview" />
             </div>
             <div className="order-1 lg:order-2">
               <span className="inline-block px-3 py-1 text-xs font-medium text-orange-400 bg-orange-500/10 rounded-full mb-4">
