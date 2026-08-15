@@ -2,6 +2,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Navbar } from '@/components/layout/Navbar';
 import { PhoneMockup } from '@/components/ui/PhoneMockup';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = { title: 'Earn Czar AI Coins' };
@@ -71,7 +72,15 @@ export default function CoinsPage() {
               <PhoneMockup className="w-64">
                 <div className="w-full h-full bg-gradient-to-br from-amber-900/30 to-dark-100 flex flex-col p-4 pt-12">
                   <div className="text-center mb-3">
-                    <span className="text-3xl block mb-1">🪙</span>
+                    <div className="w-10 h-10 mx-auto mb-1 rounded-full overflow-hidden flex items-center justify-center">
+                      <Image
+                        src="/czarai logo 1024.png"
+                        alt="Czar Coin"
+                        width={40}
+                        height={40}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
                     <p className="text-white font-extrabold text-lg">1,450 Coins</p>
                     <span className="inline-block px-2 py-0.5 bg-gold-500/20 text-gold-400 text-[10px] rounded-full font-semibold">
                       🔥 7-Day Streak Active (+20%)

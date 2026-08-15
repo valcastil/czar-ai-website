@@ -3,6 +3,7 @@
 import { NAV_LINKS } from '@/lib/constants';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -26,8 +27,15 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="text-2xl">👑</span>
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <Image
+            src="/czarai logo 1024.png"
+            alt="Czar AI Logo"
+            width={32}
+            height={32}
+            className="w-8 h-8 rounded-full object-contain group-hover:scale-105 transition-transform duration-200"
+            priority
+          />
           <span className="text-xl font-bold tracking-tight">
             <span className="gradient-text">Czar</span>
             <span className="text-white"> AI</span>

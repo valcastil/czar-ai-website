@@ -55,7 +55,7 @@ export const FEATURES = [
     color: 'from-indigo-500 to-violet-500',
   },
   {
-    icon: '🪙',
+    icon: '/czarai logo 1024.png',
     title: 'Earn Czar AI Coins',
     description: 'Earn Czar Coins by completing daily streaks, journaling, and engaging with AI coaching. Unlock VIP perks and exclusive rewards.',
     href: '/features/coins',
