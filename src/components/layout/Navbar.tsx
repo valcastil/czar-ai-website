@@ -1,6 +1,7 @@
 'use client';
 
 import { NAV_LINKS } from '@/lib/constants';
+import { GoogleAdBanner } from '@/components/ui/GoogleAdBanner';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
@@ -70,6 +71,9 @@ export function Navbar() {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
+
+      {/* Google Ads Banner below navbar */}
+      <GoogleAdBanner />
 
       {/* Mobile menu */}
       <AnimatePresence>
