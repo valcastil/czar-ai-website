@@ -41,7 +41,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-xl font-bold text-white mb-3">6. Contact</h2>
-              <p>For legal inquiries, contact us at legal@czarai.app.</p>
+              <p>For legal inquiries, contact us at support@openanaios.com.</p>
             </section>
           </div>
         </div>

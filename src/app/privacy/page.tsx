@@ -46,7 +46,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-xl font-bold text-white mb-3">7. Contact</h2>
-              <p>For privacy-related questions, contact us at privacy@czarai.app.</p>
+              <p>For privacy-related questions, contact us at support@openanaios.com.</p>
             </section>
           </div>
         </div>
