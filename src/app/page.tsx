@@ -16,20 +16,20 @@ export default function HomePage() {
       <Navbar />
 
       {/* ─── HERO ─── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
+      <section className="relative min-h-[calc(100vh-120px)] flex items-center overflow-hidden pt-2 pb-12">
         {/* Background effects */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-500/5 via-dark-400 to-dark-400" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center py-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center py-2 lg:py-4">
             {/* Left: Text */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-500 text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-500 text-sm font-medium mb-4">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-gold-500" />
@@ -37,14 +37,14 @@ export default function HomePage() {
                 Now available on iOS &amp; Android
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
                 Unique{' '}
                 <span className="gradient-text">Social Platform</span>
                 <br />
                 with AI
               </h1>
 
-              <p className="text-lg text-gray-400 max-w-lg mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-400 max-w-lg mb-6 leading-relaxed">
                 Your personal AI-powered charisma coach. Journal your experiences, get real-time coaching,
                 share Czareels, and connect securely — while earning Czar AI coins all in one beautiful app.
               </p>
@@ -52,20 +52,20 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/download"
-                  className="px-8 py-4 bg-gold-500 hover:bg-gold-400 text-black font-bold rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/25 text-lg"
+                  className="px-8 py-3.5 bg-gold-500 hover:bg-gold-400 text-black font-bold rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/25 text-base sm:text-lg"
                 >
                   Start Free Trial
                 </Link>
                 <Link
                   href="/features"
-                  className="px-8 py-4 border border-white/20 hover:border-white/40 text-white font-semibold rounded-full transition-all duration-200"
+                  className="px-8 py-3.5 border border-white/20 hover:border-white/40 text-white font-semibold rounded-full transition-all duration-200 text-base sm:text-lg"
                 >
                   Explore Features
                 </Link>
               </div>
 
               {/* Stats row */}
-              <div className="flex flex-wrap gap-8 mt-12">
+              <div className="flex flex-wrap gap-8 mt-6">
                 {STATS.map((stat) => (
                   <div key={stat.label}>
                     <p className="text-2xl font-bold text-gold-500">{stat.value}</p>
@@ -76,7 +76,7 @@ export default function HomePage() {
             </motion.div>
 
             {/* Right: 3D Revolving Phone mockups */}
-            <div className="flex justify-center items-center w-full min-h-[540px] lg:min-h-[580px] mt-8 lg:mt-0">
+            <div className="flex justify-center items-center w-full min-h-[440px] lg:min-h-[480px] mt-4 lg:mt-0">
               <RevolvingPhoneMockup />
             </div>
           </div>
@@ -84,12 +84,12 @@ export default function HomePage() {
 
         {/* Scroll indicator */}
         <motion.div
-          animate={{ y: [0, 8, 0] }}
+          animate={{ y: [0, 6, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-10"
         >
-          <span className="text-xs text-gray-600">Scroll to explore</span>
-          <div className="w-5 h-8 rounded-full border-2 border-gray-700 flex justify-center">
+          <span className="text-xs text-gray-500">Scroll to explore</span>
+          <div className="w-4 h-7 rounded-full border-2 border-gray-700 flex justify-center">
             <div className="w-1 h-2 bg-gold-500 rounded-full mt-1 animate-pulse-gold" />
           </div>
         </motion.div>

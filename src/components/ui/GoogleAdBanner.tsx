@@ -15,7 +15,7 @@ export function GoogleAdBanner() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center py-2 px-4 bg-dark-400/60 border-t border-b border-white/5 overflow-hidden min-h-[50px]">
+    <div className="w-full flex justify-center items-center py-1 px-4 bg-dark-400/60 border-t border-b border-white/5 overflow-hidden max-h-[60px]">
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1053852178700818"
@@ -24,10 +24,10 @@ export function GoogleAdBanner() {
       />
       <ins
         className="adsbygoogle"
-        style={{ display: 'block', width: '100%', textAlign: 'center' }}
+        style={{ display: 'inline-block', width: '100%', maxHeight: '50px', textAlign: 'center' }}
         data-ad-client="ca-pub-1053852178700818"
         data-ad-slot="auto"
-        data-ad-format="auto"
+        data-ad-format="horizontal"
         data-full-width-responsive="true"
       />
     </div>

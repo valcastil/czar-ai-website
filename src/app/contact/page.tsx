@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 pb-16">
+      <main className="pt-8 pb-16">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <span className="text-5xl block mb-6">📧</span>
           <h1 className="text-4xl font-extrabold text-white mb-4">Contact Us</h1>

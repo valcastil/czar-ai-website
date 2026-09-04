@@ -19,7 +19,7 @@ export default function PricingPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 pb-16">
+      <main className="pt-8 pb-16">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
             label="Pricing"
