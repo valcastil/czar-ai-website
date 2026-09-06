@@ -39,6 +39,12 @@ export const metadata: Metadata = {
     ],
   },
   robots: { index: true, follow: true },
+  other: {
+    'tiktok-developers-site-verification': [
+      'AUeUu879KFVRusNrQP8EDOgMg3PPa5m1',
+      'tiktok-developers-site-verification=AUeUu879KFVRusNrQP8EDOgMg3PPa5m1',
+    ],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
