@@ -2,7 +2,12 @@ import { Footer } from '@/components/layout/Footer';
 import { Navbar } from '@/components/layout/Navbar';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'Terms of Service' };
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  other: {
+    'tiktok-developers-site-verification': 'sFkcpOr49aAXZj1wv3kK36peXUpJQqVk',
+  },
+};
 
 export default function TermsPage() {
   return (
@@ -43,6 +48,10 @@ export default function TermsPage() {
               <h2 className="text-xl font-bold text-white mb-3">6. Contact</h2>
               <p>For legal inquiries, contact us at support@openanaios.com.</p>
             </section>
+          </div>
+
+          <div className="mt-12 pt-6 border-t border-gray-800/60 text-xs text-gray-600 select-all">
+            <p>sFkcpOr49aAXZj1wv3kK36peXUpJQqVk</p>
           </div>
         </div>
       </main>
