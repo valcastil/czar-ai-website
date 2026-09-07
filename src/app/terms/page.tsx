@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   title: 'Terms of Service',
   other: {
     'tiktok-developers-site-verification': [
-      'AUeUu879KFVRusNrQP8EDOgMg3PPa5m1',
-      'tiktok-developers-site-verification=AUeUu879KFVRusNrQP8EDOgMg3PPa5m1',
+      '3X9bqyKnkws5WhdHgDeznPC3Dju5cOcv',
+      'tiktok-developers-site-verification=3X9bqyKnkws5WhdHgDeznPC3Dju5cOcv',
     ],
   },
 };
@@ -54,7 +54,7 @@ export default function TermsPage() {
           </div>
 
           <div className="mt-12 pt-6 border-t border-gray-800/60 text-xs text-gray-600 select-all">
-            <p>tiktok-developers-site-verification=AUeUu879KFVRusNrQP8EDOgMg3PPa5m1</p>
+            <p>tiktok-developers-site-verification=3X9bqyKnkws5WhdHgDeznPC3Dju5cOcv</p>
           </div>
         </div>
       </main>
