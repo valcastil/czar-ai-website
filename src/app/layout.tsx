@@ -38,7 +38,11 @@ export const metadata: Metadata = {
     ],
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: 'google6519d4b52a0749c7.html',
+  },
   other: {
+    'google-site-verification': 'google6519d4b52a0749c7.html',
     'tiktok-developers-site-verification': [
       'AUeUu879KFVRusNrQP8EDOgMg3PPa5m1',
       'tiktok-developers-site-verification=AUeUu879KFVRusNrQP8EDOgMg3PPa5m1',
